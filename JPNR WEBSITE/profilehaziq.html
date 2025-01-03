@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPNR Website</title>
+    <link rel="stylesheet" href="haziq_style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        /* Add hover effect to navigation links */
+        .navlinks li a {
+            color: #e5e5e5;
+            margin-right: 2.5rem;
+            position: relative;
+            transition: color 0.3s, transform 0.3s ease;
+        }
+
+        .navlinks li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #007ced;
+            transition: width 0.3s;
+        }
+
+        .navlinks li a:hover {
+            color: #007ced;
+            transform: translateY(-2px);
+        }
+
+        .navlinks li a:hover::after {
+            width: 100%;
+        }
+
+        /* Hover effect for buttons */
+        .btn {
+            text-decoration: none;
+            border: 2px solid #007ced;
+            background-color: #007ced;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #005bb5;
+            transform: scale(1.05);
+        }
+
+        /* Original hover effect for social icons */
+        .social a {
+            color: #e5e5e5;
+            font-size: 18px;
+            margin-right: 10px;
+            transition: color 0.5s, transform 0.5s ease;
+        }
+
+        .social a:hover {
+            color: #007ced;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo" style="display: flex; align-items: center;">
+                    <img src="images/JPNR.png" alt="Logo" style="height: 50px; margin-right: 10px;">
+                    <div class="logo-text">Jawatan Perwakilan Non Resident</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="images/Ajiq.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>JPNR  <span>President</span></h5>
+                    <h1>Haziq Danial</h1>
+                    <p> NAME: <span>MUHAMMAD HAZIQ DANIAL BIN ZAHRIN</span></p>
+                    <p> AGE :  <span>23 </span></p>
+                    <p>STUDENT ID:<span>2024568387</span></p>    
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="#" class="btn active">Download Details</a>
+                       <a href="#" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100009102065566"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/haziqd4nial/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.link/ubjnm0"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
